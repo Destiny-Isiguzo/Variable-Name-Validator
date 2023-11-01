@@ -21,6 +21,10 @@
   --header-bg-color: rgb(49,49,54);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -195,11 +199,19 @@ button:is(:focus, :focus-visible) {
   animation: slideIn 1s 100ms ease;
 }
 
+.check__result {
+  color: rgb(144, 142, 139);
+}
+
 .result__message {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 1.5rem;
+  background-color: rgb(26, 26, 26);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.3rem;
 }
 
 .positive__message-wrapper {
@@ -374,7 +386,7 @@ footer {
   max-width: 90rem;
   margin: auto;
   gap: 2.5rem;
-  padding-block: 4rem;
+  /* padding-block: 4rem; */
   animation: slideIn 1s ease;
 }
 
