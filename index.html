@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script type="module" src="/main.js" defer></script>
+    <title>Variable Name Checker | Home</title>
+  </head>
+  <body>
+    <header>
+      <a href="" class="logo__container">
+        <h1 class="logo">DI</h1>
+      </a>
+      <a href="about.html" class="about__page">About</a>
+    </header>
+
+    <main>
+      <div class="display" id="display"></div>
+      <input id="input" type="text" required placeholder="Enter a variable name">
+      <button class="check__variable" id="check__variable">Check Variable</button>
+      <div class="case__buttons" id="case-buttons">
+        <button class="case case1" id="camel-case">camelCase</button>
+        <button class="case case2" id="pascal-case">Pascal Case</button>
+        <button class="case case3" id="snake-case">snake_case</button>
+        <button class="case case4" id="constant-case">CONSTANT</button>
+      </div>
+      <div class="result__message">
+        <div class="positive__message-wrapper">
+          <i class="bi bi-check-circle-fill positive__logo"></i>
+          <p class="positive__message">Variable name is valid!</p>
+        </div>
+        <div class="negative__message-wrapper">
+          <i class="bi bi-x-circle-fill negative__logo"></i>
+          <p class="negative__message">Variable name is invalid</p>
+        </div>
+        <div class="reserved-keyword-error">
+          <i class="bi bi-exclamation-triangle-fill reserved-error-logo"></i>
+          <p class="reserved-keyword-message">Reserved keyword found</p>
+        </div>
+      </div>
+      <!-- <div class="error__msg-display">
+        <div class="error__msg1">
+          <div class="bg1 bg"></div>
+          <i class="bi bi-x-circle-fill error__msg1-icon"></i>
+          Starts with letter or underscore ( _ )
+        </div>
+
+        <div class="error__msg2">
+          <div class="bg2 bg"></div>
+          <i class="bi bi-x-circle-fill error__msg2-icon"></i>
+          Cannot start with a digit
+        </div>
+
+        <div class="error__msg3">
+          <div class="bg3 bg"></div>
+          <i class="bi bi-x-circle-fill error__msg3-icon"></i>
+          Cannot be a reserved keyword
+        </div>
+      </div> -->
+    </main>
+    <footer>
+      <div class="open__source-container">
+        <p class="open__source-main">This project is open source</p>
+        <div class="star__fork-wrapper">
+          <a href="https://github.com/Destiny-Isiguzo/Variable-Name-Validator.git" class="star">
+            <i class="bi bi-github"></i>
+            <p class="star__text">Star</p>
+          </a>
+          <a href="https://github.com/Destiny-Isiguzo/Variable-Name-Validator.git" class="fork">
+            <i class="bi bi-github"></i>
+            <p class="fork__text">Fork</p>
+          </a>
+        </div>
+        <p class="ecmascript__text">Identifiers are validated according to ECMAScript 6</p>
+      </div>
+    </footer>
+  </body>
+</html>

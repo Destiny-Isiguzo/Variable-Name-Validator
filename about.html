@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script type="module" src="/main.js" defer></script>
+  <script type="module" src="/about.js" defer></script>
+  <title>Variable Name Checker | About</title>
+</head>
+<body>
+  <header class="home__page-header">
+    <a href="/index.html" class="home__page-link">
+      <p class="home__page-link-text">Go home</p>
+      <i class="bi bi-house home__page-link-icon"></i>
+    </a>
+  </header>
+
+  <main class="about__content">
+    <p class="intro__text">Wondering if you can use a given string as a variable name in JavaScript? Try out this tool!</p>
+    <section class="how-it-works__section">
+      <div class="header-wrapper">
+        <h2>How it works?</h2>
+        <i class="bi bi-plus toggle__icon toggle__icon1"></i>
+      </div>
+      <div class="accordion__content content1">
+        <p class="how-it-works__description">
+          This Variable Name Checker and Case Converter App is a useful tool for JavaScript developers, specifically those working with the ES6 (ECMAScript 2015) standard. This tool enables users to input a variable name and verify whether it adheres to the ES6 naming conventions, which require the use of lowercase letters and underscores, and to avoid using reserved keywords, etc. 
+  
+          For instance, if a user inputs "var_name", the app will indicate that this is a valid variable name under the ES6 standard. On the other hand, if a user inputs "10var_name", the app will highlight this as an invalid variable name due to it starting with digits. Similarly, if a user inputs a reserved keyword, such as "var", "let", "const" etc, the app will alert them to the issue.
+          <div class="code__wrapper">
+            <div class="three__color-wrapper">
+              <div class="color1"></div>
+              <div class="color2"></div>
+              <div class="color3"></div>
+            </div>
+            <div class="user__input-wrapper">
+              <p class="user__input1">
+                "var_name"  //Valid variable name
+              </p>
+              <p class="user__input2">
+                "10var_name"  //Invalid variable name
+              </p>
+            </div>
+          </div>
+        </p>
+      </div>
+    </section>
+    <section class="about__section">
+      <div class="header-wrapper">
+        <h2>About this tool!</h2>
+        <i class="bi bi-plus toggle__icon toggle__icon2"></i>
+      </div>
+      <div class="accordion__content">
+        <p class="about__description">
+          This Variable Name Checker App serves as a valuable resource for those who need to ensure that their variable names conform to the ES6 standard, helping to prevent potential errors and maintaining clean, efficient code.
+  
+          To access the app, you can simply visit the website through the github page, which is equipped with an intuitive user interface. By providing your variable name as input and hitting the "check variable", the app will immediately validate it. 
+      
+          With the help of this app, developers can efficiently verify their variable names and make any necessary adjustments to ensure full compliance with the ES6 standard. 
+      
+          Keep in mind that this app does not validate other parts of your code, such as syntax errors or logical errors. To perform a thorough code analysis, consider using more advanced tools.
+        </p>
+      </div>
+    </section>
+    <p class="more__info">
+      For additional information and resources, please visit the ES6  standard website. 
+      
+      Additionally, remember to test your code thoroughly after making any adjustments, as it's crucial to ensure that your variable names and other aspects of your code continue to function correctly. 
+  
+      It's important to note that this solution assumes you're familiar with the ES6 standard and have a basic understanding of JavaScript variable naming conventions. If you're unsure about any of these aspects, it's recommended that you consult relevant documentation or tutorials. 
+    </p>
+  </main>
+  <footer>
+    <div class="open__source-container">
+      <p class="open__source-main">This project is open source</p>
+      <div class="star__fork-wrapper">
+        <a href="" class="star">
+          <i class="bi bi-github"></i>
+          <p class="star__text">Star</p>
+        </a>
+        <a href="" class="fork">
+          <i class="bi bi-github"></i>
+          <p class="fork__text">Fork</p>
+        </a>
+      </div>
+      <p class="ecmascript__text">Identifiers are validated according to ECMAScript 6</p>
+    </div>
+  </footer>
+</body>
+</html>
